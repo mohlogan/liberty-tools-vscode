@@ -216,7 +216,7 @@ it('attach debugger for gradle with custom parameter event', async () => {
 }).timeout(550000);
 
 //(process.platform === 'darwin' ? it.skip : it)
-it('start gradle with docker from liberty dashboard', async () => {      
+it('start gradle with docker from liberty dashboard', async () => {
     
   
   await utils.launchDashboardAction(item, constants.START_DASHBOARD_ACTION_WITHDOCKER, constants.START_DASHBOARD_MAC_ACTION_WITHDOCKER);  
@@ -242,7 +242,7 @@ it('start gradle with docker from liberty dashboard', async () => {
 }).timeout(350000);
 
 //(process.platform === 'darwin' ? it.skip : it)
-it('View test report for gradle project', async () => {      
+it('View test report for gradle project', async () => {
     
   await utils.launchDashboardAction(item,constants.GRADLE_TR_DASHABOARD_ACTION, constants.GRADLE_TR_DASHABOARD_MAC_ACTION);   
   tabs = await new EditorView().getOpenEditorTitles();

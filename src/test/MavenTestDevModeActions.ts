@@ -230,7 +230,9 @@ it('attach debugger for start with custom parameter event', async () => {
   expect(attachStatus).to.be.true;
 }).timeout(350000);
 
-(process.platform === 'darwin' ? it.skip : it)('start maven with docker from liberty dashboard', async () => {      
+//(process.platform === 'darwin' ? it.skip : it)
+
+it('start maven with docker from liberty dashboard', async () => {      
     
   
   await utils.launchDashboardAction(item, constants.START_DASHBOARD_ACTION_WITHDOCKER, constants.START_DASHBOARD_MAC_ACTION_WITHDOCKER);  
